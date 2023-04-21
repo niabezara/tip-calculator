@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <img class="logo" src="./images/logo.svg" alt="" />
+    <div class="container">
+      <div class="first-section">
+        <p class="bill">Bill</p>
+        <input
+          id="bills"
+          class="first-input"
+          type="number"
+          name=""
+          id=""
+          placeholder="0"
+        />
+        <p class="tip">Select Tip %</p>
+        <section class="button-sec">
+          <button class="tips">5%</button>
+          <button class="tips">10%</button>
+          <button class="tips">15%</button>
+          <button class="tips">25%</button>
+          <button class="tips">50%</button>
+          <input class="custom" type="text" placeholder="Custom" />
+        </section>
+        <article class="subarticle">
+          <p class="number">Number of People</p>
+          <p id="error" class="error">Can’t be zero</p>
+        </article>
+        <input
+          class="second-input"
+          type="number"
+          name=""
+          id=""
+          placeholder="0"
+        />
+        <!-- second section container -->
+        <div class="second-section">
+          <div class="tipamount">
+            <article class="tiparticle">
+              <p>Tip Amount</p>
+              <p class="person">/ person</p>
+            </article>
+            <div class="amount1">$ 0.00</div>
+          </div>
+          <div class="totalamount">
+            <article class="totalarticle">
+              <p>Total</p>
+              <p class="person">/ person</p>
+            </article>
+            <div class="amount2">$ 0.00</div>
+          </div>
+          <button class="reset">RESET</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
